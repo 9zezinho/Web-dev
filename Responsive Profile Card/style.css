@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0d243f;
+}
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 370px;
+    width: 100%;
+    background: white;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0 0.1);
+}
+.image {
+    position: relative;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #4070f4;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+.image .profile-img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   border-radius: 50%;
+   border: 3px solid white;
+}
+.profile-card .textdata{
+    display:flex;
+    flex-direction: column;
+    color: #333;
+}
+.textdata .name{
+    font-size: 22px;
+    font-weight: 500;
+}
+.textdata .profession{
+    font-size: 15px;
+    font-weight: 400;
+}
+.profile-card .media-buttons {
+    display:flex;
+    align-items:end;
+    flex-direction: row
+}
+.media-buttons .yt {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: small;
+    font-weight: 200;
+    font:100
+}
+.yt .link {
+    font-size: 18px;
+    height: 20px;
+    width: 20px;
+    color: red;
+}
+.media-buttons .fb {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: small;
+    font-weight: 200;
+    font:100
+}
+.fb .link {
+    font-size: 18px;
+    height: 20px;
+    width: 20px;
+    color: rgb(16, 76, 194);
+}
+.media-buttons .github {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: small;
+    font-weight: 200;
+    font:100
+}
+.github .link {
+    font-size: 18px;
+    height: 20px;
+    width: 20px;
+    color: rgb(0, 0, 0);
+}
