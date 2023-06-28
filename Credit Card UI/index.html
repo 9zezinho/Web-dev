@@ -4,24 +4,45 @@
         <meta charset="UTF-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
         <meta name="viewport" content="widht=device-width, initial-scale = 1.0"/>
-        <titile>Credit Card UI</titile>
+        <title>Credit Card UI</title>
 
         <!--CSS-->
-        <link href="style.css" rel="stylesheet"/>
+        <link href="cardstyle.css" rel="stylesheet"/>
     </head>
     <body>
-        <div class="credit-card">
-            <div class="image">
-                <img src="screen.png" class="background">
-                <img src="MasterCard_Logo.svg.png" class="logo">
+        <section>
+            <div class="container">
+                <div class="card front-face">
+                    <header>
+                        <span class="logo">
+                            <img src="MasterCard_Logo.svg.png" alt="">
+                        </span>
+                    <img src="chip.png" alt="" class="chip">
+                    </header>
+
+                    <div class="card-details">
+                        <div class="name-num">
+                            <h6>Card Number</h6>
+                            <h5 class="num"> 8050 2030 1872 2389</h5>
+                            <h5 class="name">Suresh Gurung</h5>
+                        </div>
+
+                        <div class="valid">
+                            <h6>Valid Until</h6>
+                            <h5>05/28</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card back-face">
+                    <h6>For customer enquiries call 07378219307 or email at
+                        mastercard@co.uk
+                    </h6>
+                    <span class="magnetic-strip"></span>
+                    <div class="signature"><i>238</i></div>
+                    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sapiente ratione, molestiae ut, deleniti soluta tempore ab voluptatem, culpa quod atque assumenda magni at voluptate?</h5>
+                </div>
             </div>
-        </div>
-        <div class="chip">
-            <span class="chip">
-                <a href="#" class="link">
-                    <i class='bx bx-chip'></i>
-                </a>
-            </span>
-        </div>
+        </section>
     </body>
 </html>
